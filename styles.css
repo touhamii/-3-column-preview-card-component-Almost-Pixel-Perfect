@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Neutral: hsl(0, 0%, 95%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --font-body:  'Lexend Deca', sans-serif;
+    --font-headings:  'Big Shoulders Display', cursive;
+}
+
+body {
+    background-color: var(--Neutral) ;
+    font-family: var(--font-body);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 { 
+    position: absolute;
+    opacity: 0;
+    clip: rect(0px ,0px,0px,0px);
+}
+
+.card-01,
+.card-02,
+.card-03 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 2.938rem 3rem 2.938rem 3rem;
+}
+
+.card-01 {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-02 {
+    background-color: var(--Dark-cyan);
+}
+
+.card-03 {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: var(--font-headings);
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 2.15rem 2.19rem 1.5rem 1px;
+}
+
+p {
+    margin-bottom: auto;
+    font-size: 15px;
+    color: var(--Transparent-white);
+    line-height: 1.669;
+    opacity: 0.9;
+}
+
+.p-c02 {
+    padding-top: 1px;
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0.77em 1.96em ;
+    line-height: 1.4;
+    margin-top: 5.2rem;
+    mix-blend-mode: screen;
+}
+
+
+footer {
+    margin: auto;
+    padding-top: 1rem;
+}
+
+/*_______________________________Spans For All sizes______________________________________________________________*/
+.sp01 {
+    margin-left: 0.5px;
+}
+
+.sp09 {
+    margin-left: 0.1px;
+}
+
+.sp03 {
+    margin-left: 0.5px;
+}
+
+.sp04 {
+    margin-left: 0.5px;
+}
+
+.sp05 {
+    margin-left: 1px
+}
+.sp06 {
+    margin-left:0.6px;
+
+}
+.sp07 {
+    margin-right: 0.5px;
+}
+
+.sp11 {
+    margin-left: -0.3px
+}
+
+.sp12 {
+    margin-left: 0.2px; 
+}
+.sp13 {
+    margin-left: 0.5px; 
+}
+
+.sp15 {
+    margin-left: 0.3px;
+}
+
+.sp17 {
+    margin-left: 0.3px;
+}
+
+.sp19 {
+        margin-left: -1px;
+    }
+/*______________________________Small screen___________________________________________________*/
+    @media (max-width: 689.9px) {
+
+.card-01 > img:nth-child(1) {
+    margin: 1px ;
+}
+
+.card-02 > img:nth-child(1) {
+    padding: 1px;
+}   
+
+.card-02 > h2:nth-child(2) {
+    padding: 2.10rem 2.19rem 1.5rem 1px;
+    }
+
+    .card-03 > h2:nth-child(2) {
+        margin: 1px 0 0 -1px;
+    }
+
+.p-c01 { 
+    padding-top: 0.5px;
+}
+
+.p-c03 {
+    margin-left: -1px;
+    margin-top: 1px; 
+    }
+
+    .button {
+        margin: 1.5625rem 0 1px 1px;
+        padding: 0.7672em 1.97em;
+    }
+
+    .bt-03 {
+        margin: 1.555rem 0 1px 0px;
+        
+    }
+
+    /* _______________________ Spans for Small Screens_______________________ */
+    
+    .sp02 {
+        margin-left: -0.5px;
+    }
+
+    .sp08 {
+        position:relative;
+        bottom: 1px;
+    }
+
+    .sp14 {
+        margin-left: 0.1px;
+    }
+
+    .sp18 {
+        margin-left: -1px;
+    }
+
+    .sp18_1 {
+        margin-left: 0.1px;
+    }
+
+    .sp20 {
+        position:relative;
+        right:  1px;
+        top  : -1px;
+    }
+
+    .svg-03 {
+        margin-top:1px;
+    }
+
+    footer {
+        width: 33ch;
+    }
+
+}
+
+/*______________________________Big Screen___________________________________________________*/
+
+@media (min-width: 690px) {
+
+    main {
+        flex-direction: row;
+        max-width: 920px;
+        margin: 10.7rem auto 0;
+    }
+
+    .card-01,
+    .card-02,
+    .card-03 {
+        padding: 3rem;
+        flex-direction: column;
+        width: calc(100% / 3);
+    }
+
+    .card-01 {
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+    }
+
+    .card-03 {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    h2 {
+        padding : 2.2rem 0px 1.51rem 0px;
+    }
+
+    .p-c02 {
+        padding-top: 0;
+        margin-bottom: auto;
+    }
+
+    .p-c01,
+    .p-c02,
+    .p-c03 {   
+        width: 23ch;
+    }
+
+    .p-c01 {
+        margin-left: -1px;
+    } 
+
+    .p-c03 {
+        margin-left: -1px;
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        color: var(--Neutral);
+        border: var(--Neutral) 2px solid; 
+        background-color: transparent;
+        transition: 0.3s ease-out;
+    }
+
+/* __________________________________Spans for Big screens ________________________ */
+    .sp02 {
+        margin-left: -0.3px;
+    }
+
+    .sp08_2 {
+        margin-left: 0.2px;
+    }
+
+    .sp14 {
+        margin-left: 0.3px;
+    }
+
+    .sp16 {
+        margin-left: -0.4px;
+    }
+
+    .sp18_1 {
+        margin-left: 0.1px;
+    }
+
+    .sp18_2 {
+        margin-left: 0.1px;
+        margin-right: 0.1px;
+    }
+
+    .sp20 {
+        position:relative;
+        right: 1px;
+        top:-0.3px;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 0.875rem;
+}
+footer a {
+    color: var(--Dark-cyan)
+}
