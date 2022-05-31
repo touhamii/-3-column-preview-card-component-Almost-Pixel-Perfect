@@ -97,20 +97,15 @@ footer {
 }
 
 /*_______________________________Spans For All sizes______________________________________________________________*/
-.sp01 {
-    margin-left: 0.5px;
+.sp01,
+.sp03,
+.sp04,
+.sp13 {
+        margin-left: 0.5px;
 }
 
 .sp09 {
     margin-left: 0.1px;
-}
-
-.sp03 {
-    margin-left: 0.5px;
-}
-
-.sp04 {
-    margin-left: 0.5px;
 }
 
 .sp05 {
@@ -130,9 +125,6 @@ footer {
 
 .sp12 {
     margin-left: 0.2px; 
-}
-.sp13 {
-    margin-left: 0.5px; 
 }
 
 .sp15 {
