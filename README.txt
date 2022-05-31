@@ -1,9 +1,6 @@
 The challenge Link :
 www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-
 _________________________________________________________________________________________________________
-- I submited this just to check how my solution will be displayed on the DESIGN COMPARISON feature on FrontEndMentor 
-because im trying to get a pixel perfect design.
-_________________________________________________________________________________________________________
 ### What I learned 
 
 - How to properly use (margin auto) in Flexbox (the 3 buttons were not in same line in certain screen resolutions).
