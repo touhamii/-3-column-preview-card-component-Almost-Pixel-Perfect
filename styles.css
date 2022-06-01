@@ -255,7 +255,7 @@ footer {
     .p-c01,
     .p-c02,
     .p-c03 {   
-        width: 23ch;
+        max-width: 23ch;
     }
 
     .p-c01 {
